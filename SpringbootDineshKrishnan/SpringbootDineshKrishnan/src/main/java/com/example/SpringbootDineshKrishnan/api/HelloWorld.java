@@ -16,9 +16,9 @@ public class HelloWorld {
  {
 
          "customerId": 1,
-         "customerFirstName": "Adam",
-         "customerLastName": "Hackman",
-         "customerEmail": "adam.hackman@gmail.com"
+         "customerFirstName": "Prince",
+         "customerLastName": "Jones",
+         "customerEmail": "prince.jones@gmail.com"
          },
          {
          "customerId": 2,

@@ -1,12 +1,24 @@
 package com.example.SpringbootDineshKrishnan.model;
 
-import org.springframework.stereotype.Component;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@Component
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Customer {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonProperty("id")
     private int customerId;
+    @JsonProperty("firstName")
     private String customerFirstName;
+    @JsonProperty("lastName")
     private String customerLastName;
+    @JsonProperty("email")
     private String customerEmail;
 
     public int getCustomerId() {
